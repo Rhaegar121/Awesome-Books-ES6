@@ -5,4 +5,4 @@ class Books {
     }
   }
   
-  export default Books;
+export default Books;

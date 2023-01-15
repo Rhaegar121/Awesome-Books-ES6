@@ -4,14 +4,24 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: var(--dark-blue-color);
 }
 
 .container {
-  max-width: 1000px;
-  height: auto;
+  width: 700px;
+  height: 400px;
   left: 50%;
+  top: 17%;
   transform: translateX(-50%);
   position: fixed;
+  border: 3px solid var(--dark-blue-color);
+}
+
+:root {
+  --background-color: #fff;
+  --dark-blue-color: #008080;
+  --light-blue-color: #E0FFFF;
+  --deepsky-blue-color: #00CED1;
 }
 
 h1 {
@@ -19,7 +29,8 @@ h1 {
   font-size: 45px;
   text-transform: capitalize;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 40px;
+  color: var(--dark-blue-color);
 }
 
 /* navbar */
@@ -27,41 +38,59 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 2px solid black;
+  border: 3px solid var(--dark-blue-color);
   padding: 10px 25px;
   font-weight: bold;
   font-size: 20px;
   margin: 10px 15px;
 }
 
-.menu-list {
+.web-menu {
   display: flex;
-  flex-direction: row;
-  gap: 35px;
-  list-style: none;
 }
 
-a {
+.web-menu a {
+  position: relative;
   text-decoration: none;
-  color: black;
+  color: var(--dark-blue-color);
+  padding: 0px 18px;
 }
 
-a:hover {
-  color: #00b400;
+.web-menu a:hover {
+  color: var(--deepsky-blue-color);
 }
 
 .active {
-  color: #00b400;
+  color: var(--deepsky-blue-color) !important;
 }
 
-/* navbar closed */
+.web-menu #add-book-view::before {
+  content: "";
+  width: 2.3px;
+  height: 33px;
+  background-color: var(--dark-blue-color);
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  transform: translateY(-18%);
+}
+
+.web-menu #add-book-view::after {
+  content: "";
+  width: 3px;
+  height: 33px;
+  background-color: var(--dark-blue-color);
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  transform: translateY(-18%);
+}
 
 /* books-list */
-
 .book-list {
-  border: 3px solid #000;
-  width: 800px;
-  margin: 20px auto;
+  border: 2px solid var(--dark-blue-color);
+  width: 650px;
+  margin: 30px auto;
 }
 
 .books {
@@ -70,18 +99,24 @@ a:hover {
   padding: 5px;
   align-items: center;
   height: 40px;
-  background-color: #ccc;
+  background-color: var(--light-blue-color);
 }
 
 .books:nth-child(2n) {
-  background-color: #fff;
+  background-color: var(--background-color);
 }
 
 .books .remove-btn {
-  margin-right: 10px;
-  border: 2px solid #000;
-  width: 70px;
-  height: 30px;
+  margin-right: 5px;
+  border: 2px solid var(--dark-blue-color);
+  width: 75px;
+  height: 33px;
+  background-color: var(--background-color);
+}
+
+.books .remove-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* add-book */
@@ -95,7 +130,7 @@ a:hover {
 
 #form {
   width: 500px;
-  margin: 10px auto;
+  margin: 30px auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -103,7 +138,7 @@ a:hover {
 
 #form #input_title,
 #input_author {
-  border: 3px solid #000;
+  border: 2px solid var(--dark-blue-color);
   width: 500px;
   height: 40px;
 }
@@ -111,13 +146,20 @@ a:hover {
 #form #input_title::placeholder,
 #input_author::placeholder {
   padding-left: 10px;
-  color: #000;
+  color: var(--dark-blue-color);
 }
 
 #form #add_btn {
-  width: 60px;
-  height: 30px;
-  border: 3px solid #000;
+  width: 80px;
+  height: 35px;
+  border: 2px solid var(--dark-blue-color);
+  color: var(--dark-blue-color);
+  background-color: var(--background-color);
+}
+
+#form #add_btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 /* contact us section */
@@ -133,19 +175,16 @@ a:hover {
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  font-size: 18px;
 }
 
 .contact-details {
-  margin-left: 30px;
+  font-size: 18px;
 }
 
-/* contact us section closed */
-
+/* footer section */
 #copyright {
-  border: 2px solid #000;
+  border: 3px solid var(--dark-blue-color);
   margin: 620px 15px 0 15px;
   font-size: 20px;
   font-weight: bold;
