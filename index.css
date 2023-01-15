@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik+Vinyl&family=Rye&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: fixed;
+}
+
+h1 {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 45px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 70px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 15px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #00b400;
+}
+
+.active {
+  color: #00b400;
+}
+
+/* navbar closed */
+
+/* books-list */
+
+.book-list {
+  border: 3px solid #000;
+  width: 800px;
+  margin: 20px auto;
+}
+
+.books {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+  height: 40px;
+  background-color: #ccc;
+}
+
+.books:nth-child(2n) {
+  background-color: #fff;
+}
+
+.books .remove-btn {
+  margin-right: 10px;
+  border: 2px solid #000;
+  width: 70px;
+  height: 30px;
+}
+
+/* add-book */
+#add-book {
+  display: none;
+}
+
+#new {
+  text-align: center;
+}
+
+#form {
+  width: 500px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#form #input_title,
+#input_author {
+  border: 3px solid #000;
+  width: 500px;
+  height: 40px;
+}
+
+#form #input_title::placeholder,
+#input_author::placeholder {
+  padding-left: 10px;
+  color: #000;
+}
+
+#form #add_btn {
+  width: 60px;
+  height: 30px;
+  border: 3px solid #000;
+}
+
+/* contact us section */
+#contact-us {
+  display: none;
+}
+
+#contact-us .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-details {
+  margin-left: 30px;
+}
+
+/* contact us section closed */
+
+#copyright {
+  border: 2px solid #000;
+  margin: 620px 15px 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 25px;
+}
