@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="sample.png" alt="project sample" width="140"  height="auto" />
+  <img src="sample.png" alt="project sample" width="220"  height="auto" />
   <br/>
 
   <h3><b>Awesome Books ES6 Project</b></h3>
