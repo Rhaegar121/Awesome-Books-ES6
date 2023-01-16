@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar">
+        <p class="web-name">Awesome Books</p>
+        <div class="web-menu">
+            <a href="#" id="books-list-view" class="active">List</a>
+            <a href="#" id="add-book-view">Add New</a>
+            <a href="#" id="contact-us-view">Contact</a>
+        </div>
+    </nav>
+
+    <!-- display current date -->
+    <section id="date"></section>
+
+    <!-- book list section -->
+    <section id="books-list">
+        <div class="container">
+            <h1 id="all">All awesome books</h1>
+            <div class="book-list">
+                <!-- dynamically in js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- add book section -->
+    <section id="add-book">
+        <div class="container">
+            <h1 id="new">Add a new book</h1>
+            <form action="" method="" id="form">
+                <input type="text" name="titleInput" id="input_title" class="form-control" placeholder="Title"
+                    required />
+                <br />
+                <input type="text" name="authorInput" id="input_author" class="form-control" placeholder="Author"
+                    required />
+                <br />
+                <button id="add_btn" type="submit">Add Book</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- contact us section -->
+    <section id="contact-us">
+        <div class="container">
+            <h1>Contact Information</h1>
+            <p class="contact-info">
+                Do you have any questions or you just want to say "Hello"? <br>You can reach out to us!
+            </p>
+            <ul class="contact-details">
+                <li>Our email is abc123@gmail.com</li>
+                <li>Our phone number is 004358634422</li>
+                <li>Our address is Helphome, Help city, Help</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- footer section-->
+    <footer id="copyright">
+        <span>Copyright</span>
+        <span>...</span>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
