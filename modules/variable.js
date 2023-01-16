@@ -12,4 +12,6 @@ const listbook = document.querySelector('#books-list');
 const addbook = document.querySelector('#add-book');
 const contactus = document.querySelector('#contact-us');
 
-export { form, bookList, titleInput, authorInput, addBtn, booksListView, addNewBookView, contactView, listbook, addbook, contactus };
+const date = document.querySelector('#date');
+
+export { form, bookList, titleInput, authorInput, addBtn, booksListView, addNewBookView, contactView, listbook, addbook, contactus, date };

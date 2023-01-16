@@ -86,6 +86,13 @@ h1 {
   transform: translateY(-18%);
 }
 
+/* display current date */
+#date {
+  position: fixed;
+  right: 5%;
+  font-size: 20px;
+}
+
 /* books-list */
 .book-list {
   border: 2px solid var(--dark-blue-color);

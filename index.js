@@ -1,5 +1,6 @@
 import Library from './modules/library.js';
-import { form, bookList, titleInput, authorInput, addBtn, booksListView, addNewBookView, contactView, listbook, addbook, contactus } from './modules/variable.js';
+import { form, bookList, titleInput, authorInput, addBtn, booksListView, addNewBookView, contactView, listbook, addbook, contactus, date } from './modules/variable.js';
+import { DateTime } from './modules/luxon.js';
 
 // book list
 window.onload = () => {
@@ -56,3 +57,11 @@ addNewBookView.onclick = () => {
   contactus.style.display = 'none';
   listbook.style.display = 'none';
 };
+
+// display date and time
+const time = () => {
+  let today = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  date.innerText = today;
+}
+
+setInterval(time, 1000);
