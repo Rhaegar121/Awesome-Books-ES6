@@ -63,5 +63,4 @@ const time = () => {
   let today = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
   date.innerText = today;
 }
-
 setInterval(time, 1000);
