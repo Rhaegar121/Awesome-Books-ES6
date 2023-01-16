@@ -1,10 +1,23 @@
 import Library from './modules/library.js';
-import { form, bookList, titleInput, authorInput, addBtn, booksListView, addNewBookView, contactView, listbook, addbook, contactus, date } from './modules/variable.js';
 import { DateTime } from './modules/luxon.js';
+import {
+  form,
+  bookList,
+  titleInput,
+  authorInput,
+  addBtn,
+  booksListView,
+  addNewBookView,
+  contactView,
+  listbook,
+  addbook,
+  contactus,
+  date,
+} from './modules/variable.js';
 
 // book list
 window.onload = () => {
-  let newLibrary = new Library();
+  const newLibrary = new Library();
   newLibrary.showBook();
 
   form.addEventListener('submit', (e) => {
@@ -23,7 +36,7 @@ window.onload = () => {
 
   bookList.addEventListener('click', (e) => {
     if (e.target.className.includes('remove-btn')) {
-      let data = e.target;
+      const data = e.target;
       newLibrary.removeBook(data);
     }
     window.location.reload();
@@ -60,7 +73,7 @@ addNewBookView.onclick = () => {
 
 // display date and time
 const time = () => {
-  let today = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+  const today = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
   date.innerText = today;
-}
+};
 setInterval(time, 1000);

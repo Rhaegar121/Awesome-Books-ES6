@@ -20,8 +20,8 @@
 :root {
   --background-color: #fff;
   --dark-blue-color: #008080;
-  --light-blue-color: #E0FFFF;
-  --deepsky-blue-color: #00CED1;
+  --light-blue-color: #e0ffff;
+  --deepsky-blue-color: #00ced1;
 }
 
 h1 {
@@ -53,7 +53,7 @@ h1 {
   position: relative;
   text-decoration: none;
   color: var(--dark-blue-color);
-  padding: 0px 18px;
+  padding: 0 18px;
 }
 
 .web-menu a:hover {

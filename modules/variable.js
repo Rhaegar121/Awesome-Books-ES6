@@ -14,4 +14,17 @@ const contactus = document.querySelector('#contact-us');
 
 const date = document.querySelector('#date');
 
-export { form, bookList, titleInput, authorInput, addBtn, booksListView, addNewBookView, contactView, listbook, addbook, contactus, date };
+export {
+  form,
+  bookList,
+  titleInput,
+  authorInput,
+  addBtn,
+  booksListView,
+  addNewBookView,
+  contactView,
+  listbook,
+  addbook,
+  contactus,
+  date,
+};
