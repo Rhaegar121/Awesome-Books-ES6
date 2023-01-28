@@ -27,9 +27,9 @@
 # 📖 Awesome Books ES6 Project <a name="about-project"></a>
 
 <div align="center">
-  <img src="awesome book screenshot 1.png" alt="project sample" width="650"  height="auto" />
+  <img src="awesome book screenshot 1.jpg" alt="project sample" width="650"  height="auto" />
   <br/>
-  <img src="awesome book screenshot 2.png" alt="project sample" width="650"  height="auto" />
+  <img src="awesome book screenshot 2.jpg" alt="project sample" width="650"  height="auto" />
   <br/>
 
   <h3><b>Awesome Books ES6 Project</b></h3>
