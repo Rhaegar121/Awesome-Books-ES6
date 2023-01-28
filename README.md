@@ -1,13 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="sample.png" alt="project sample" width="450"  height="auto" />
-  <br/>
-
-  <h3><b>Awesome Books ES6 Project</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -34,7 +26,17 @@
 
 # 📖 Awesome Books ES6 Project <a name="about-project"></a>
 
-> This is the JavaScript project with ES6 syntax in Microverse.
+<div align="center">
+  <img src="awesome book screenshot 1.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+  <img src="awesome book screenshot 2.png" alt="project sample" width="650"  height="auto" />
+  <br/>
+
+  <h3><b>Awesome Books ES6 Project</b></h3>
+
+</div>
+
+> "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. Mainly built with javascript in Microverse Module 2.
 
 **Awesome Books ES6 Project** is a HTML, CSS and JavaScript based project.
 
@@ -113,7 +115,7 @@ Use Github pages for free and secure deployment.
 👤 **Kaung Myat Kyaw**
 
 - GitHub: [@githubhandle](https://github.com/Rhaegar121)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- Twitter: [@twitterhandle](https://twitter.com/20Rhaegar)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaung-myat-kyaw-391720227)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
