@@ -31,6 +31,8 @@
   <br/>
   <img src="awesome book screenshot 2.jpg" alt="project sample" width="650"  height="auto" />
   <br/>
+  <img src="awesome book screenshot 3.jpg" alt="project sample" width="650"  height="auto" />
+  <br/>
 
   <h3><b>Awesome Books ES6 Project</b></h3>
 

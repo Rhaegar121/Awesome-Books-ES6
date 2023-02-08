@@ -15,6 +15,9 @@ import {
   date,
   hamburger,
   mobileMenu,
+  booksListViewMenu,
+  addNewBookViewMenu,
+  contactViewMenu,
 } from './modules/variable.js';
 
 // book list
@@ -45,8 +48,22 @@ window.onload = () => {
   });
 };
 
+// mobile menu
+const menuToggle = () => {
+  hamburger.classList.toggle('open');
+  if (mobileMenu.style.display === 'flex') {
+    mobileMenu.style.display = 'none';
+  } else {
+    mobileMenu.style.display = 'flex';
+  }
+};
+
+hamburger.onclick = () => {
+  menuToggle();
+};
+
 // changing contents
-booksListView.onclick = () => {
+const booksList = () => {
   booksListView.classList.add('active');
   contactView.classList.remove('active');
   addNewBookView.classList.remove('active');
@@ -55,7 +72,16 @@ booksListView.onclick = () => {
   addbook.style.display = 'none';
 };
 
-contactView.onclick = () => {
+booksListView.onclick = () => {
+  booksList();
+};
+
+booksListViewMenu.onclick = () => {
+  booksList();
+  menuToggle();
+};
+
+const contact = () => {
   contactView.classList.add('active');
   booksListView.classList.remove('active');
   addNewBookView.classList.remove('active');
@@ -64,7 +90,16 @@ contactView.onclick = () => {
   listbook.style.display = 'none';
 };
 
-addNewBookView.onclick = () => {
+contactView.onclick = () => {
+  contact();
+};
+
+contactViewMenu.onclick = () => {
+  contact();
+  menuToggle();
+};
+
+const addNewBook = () => {
   addNewBookView.classList.add('active');
   booksListView.classList.remove('active');
   contactView.classList.remove('active');
@@ -73,19 +108,12 @@ addNewBookView.onclick = () => {
   listbook.style.display = 'none';
 };
 
-// mobile menu
-const menuToggle = () => {
-  hamburger.classList.toggle('open');
-  if (mobileMenu.style.display === 'flex') {
-    mobileMenu.style.display = 'none';
-  } else mobileMenu.style.display = 'flex';
+addNewBookView.onclick = () => {
+  addNewBook();
 };
 
-hamburger.onclick = () => {
-  menuToggle();
-};
-
-mobileMenu.onclick = () => {
+addNewBookViewMenu.onclick = () => {
+  addNewBook();
   menuToggle();
 };
 
