@@ -8,12 +8,9 @@
 }
 
 .container {
-  width: 700px;
-  height: 400px;
-  left: 50%;
-  top: 17%;
-  transform: translateX(-50%);
-  position: fixed;
+  width: 60%;
+  height: auto;
+  margin: 80px auto;
   border: 3px solid var(--dark-blue-color);
 }
 
@@ -30,7 +27,6 @@ h1 {
   text-transform: capitalize;
   text-align: center;
   margin-top: 40px;
-  color: var(--dark-blue-color);
 }
 
 /* navbar */
@@ -52,7 +48,6 @@ h1 {
 .web-menu a {
   position: relative;
   text-decoration: none;
-  color: var(--dark-blue-color);
   padding: 0 18px;
 }
 
@@ -86,26 +81,68 @@ h1 {
   transform: translateY(-18%);
 }
 
+.hamburger{
+  width: 27px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+.hamburger span{
+  background-color:var(--dark-blue-color);
+  position: absolute;
+  border-radius: 2px;
+  transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+  width:100%;
+  height: 4px;
+  transition-duration: 500ms
+}
+.hamburger span:nth-child(1){
+  top:0px;
+  left: 0px;
+}
+.hamburger span:nth-child(2){
+  top:8px;
+  left: 0px;
+  opacity:1;
+}
+.hamburger span:nth-child(3){
+  bottom:0px;
+  left: 0px;
+}
+
+.hamburger.open span:nth-child(1){
+  transform: rotate(45deg);
+  top: 8px;
+}
+.hamburger.open span:nth-child(2){
+  opacity:0;
+}
+.hamburger.open span:nth-child(3){
+  transform: rotate(-45deg);
+  top: 8px;
+}
+
 /* display current date */
 #date {
-  position: fixed;
-  right: 5%;
   font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
 }
 
 /* books-list */
 .book-list {
   border: 2px solid var(--dark-blue-color);
-  width: 650px;
+  width: 90%;
   margin: 30px auto;
 }
 
 .books {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 5px 10px;
   align-items: center;
-  height: 40px;
   background-color: var(--light-blue-color);
 }
 
@@ -114,10 +151,8 @@ h1 {
 }
 
 .books .remove-btn {
-  margin-right: 5px;
   border: 2px solid var(--dark-blue-color);
-  width: 75px;
-  height: 33px;
+  padding: 6px;
   background-color: var(--background-color);
 }
 
@@ -129,6 +164,7 @@ h1 {
 /* add-book */
 #add-book {
   display: none;
+  position: relative;
 }
 
 #new {
@@ -136,17 +172,17 @@ h1 {
 }
 
 #form {
-  width: 500px;
+  width: 80%;
   margin: 30px auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 #form #input_title,
 #input_author {
   border: 2px solid var(--dark-blue-color);
-  width: 500px;
+  width: 100%;
   height: 40px;
 }
 
@@ -157,8 +193,7 @@ h1 {
 }
 
 #form #add_btn {
-  width: 80px;
-  height: 35px;
+  padding: 7px 10px;
   border: 2px solid var(--dark-blue-color);
   color: var(--dark-blue-color);
   background-color: var(--background-color);
@@ -187,13 +222,103 @@ h1 {
 
 .contact-details {
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 /* footer section */
 #copyright {
   border: 3px solid var(--dark-blue-color);
-  margin: 620px 15px 0 15px;
+  margin: 0px 15px;
   font-size: 20px;
   font-weight: bold;
   padding: 10px 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+    border: none;
+    margin: 70px auto;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .navbar {
+    font-size: 18px;
+    padding: 8px 15px;
+    margin: 15px;
+  }
+
+  .web-menu {
+    display: none;
+  }
+
+  .web-menu {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 20%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-color);
+    padding: 25px 0px;
+    z-index: 99999;
+  }
+
+  .web-menu a {
+    font-size: 30px;
+    font-family: 'Londrina Outline', cursive;
+    margin: 25px 0px;
+  }
+
+  .web-menu #add-book-view::before {
+    width: 0;
+    height: 0;
+  }
+
+  .web-menu #add-book-view::after {
+    width: 0;
+    height: 0;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  #date {
+    font-size: 17px;
+  }
+
+  .book-list {
+    width: 100%;
+  }
+
+  .books .remove-btn {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  #form {
+    width: 90%;
+  }
+
+  #contact-us .container {
+    gap: 30px;
+  }
+
+  .contact-info {
+    font-size: 17px;
+  }
+
+  .contact-details {
+    font-size: 16px;
+  }
+
+  #copyright {
+    font-size: 18px;
+    padding: 7px 15px;
+  }
 }
