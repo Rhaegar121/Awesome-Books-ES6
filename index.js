@@ -13,6 +13,8 @@ import {
   addbook,
   contactus,
   date,
+  hamburger,
+  mobileMenu,
 } from './modules/variable.js';
 
 // book list
@@ -69,6 +71,22 @@ addNewBookView.onclick = () => {
   addbook.style.display = 'block';
   contactus.style.display = 'none';
   listbook.style.display = 'none';
+};
+
+// mobile menu
+const menuToggle = () => {
+  hamburger.classList.toggle('open');
+  if (mobileMenu.style.display === 'flex') {
+    mobileMenu.style.display = 'none';
+  } else mobileMenu.style.display = 'flex';
+};
+
+hamburger.onclick = () => {
+  menuToggle();
+};
+
+mobileMenu.onclick = () => {
+  menuToggle();
 };
 
 // display date and time
