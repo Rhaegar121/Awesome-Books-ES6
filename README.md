@@ -119,8 +119,8 @@ Use Github pages for free and secure deployment.
 👤 **Kaung Myat Kyaw**
 
 - Portfolio: [rhbarry.me](https://rhbarry.me)
-- GitHub: [@githubhandle](https://github.com/Rhaegar121)
-- Twitter: [@twitterhandle](https://twitter.com/Rhaegar121)
+- GitHub: [Rhaegar121](https://github.com/Rhaegar121)
+- Twitter: [Rhaegar121](https://twitter.com/Rhaegar121)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaungmyatkyaw/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
